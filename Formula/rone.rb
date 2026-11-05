@@ -1,5 +1,5 @@
 class Rone < Formula
-  desc "Small CLI that makes System One decision models pleasant to use from the command line"
+  desc "Makes System One decision models pleasant to use from the command-line"
   homepage "https://github.com/oteissonniere/rone"
   license "MIT"
 
@@ -17,5 +17,9 @@ class Rone < Formula
     pkg = Dir["rone-v#{version}-*-apple-darwin"].first
     bin.install File.join(pkg, "rone")
     (bin/"presets").install File.join(pkg, "presets")
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/rone --version")
   end
 end
