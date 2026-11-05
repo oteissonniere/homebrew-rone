@@ -1,4 +1,4 @@
-# oteissonniere/homebrew-tap
+# oteissonniere/homebrew-rone
 
 Homebrew tap for [rone](https://github.com/oteissonniere/rone) — a small Rust CLI that makes System One decision models pleasant to use from the command line.
 
