@@ -1,9 +1,8 @@
 class Rone < Formula
   desc "Makes System One decision models pleasant to use from the command-line"
   homepage "https://github.com/oteissonniere/rone"
+  version "0.1.2"
   license "MIT"
-
-  version = "0.1.2"
 
   if Hardware::CPU.arm?
     url "https://github.com/oteissonniere/rone/releases/download/v#{version}/rone-v#{version}-aarch64-apple-darwin.tar.gz"
