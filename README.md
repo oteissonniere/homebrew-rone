@@ -6,8 +6,12 @@ Homebrew tap for [rone](https://github.com/oteissonniere/rone) — a small Rust 
 
 ```sh
 brew tap oteissonniere/rone
+brew trust oteissonniere/rone   # Homebrew 7 requires explicit trust for third-party taps
 brew install rone
 ```
+
+The `brew trust` step is a one-time requirement of Homebrew 7: it marks the
+tap as trusted so that formulas from it can be installed.
 
 The formula installs the prebuilt macOS binary (Apple Silicon or Intel, selected automatically at install time) published in each [GitHub release](https://github.com/oteissonniere/rone/releases), together with the six bundled presets: compliance, escalation, intent, sentiment, severity and triage.
 
