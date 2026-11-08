@@ -13,9 +13,8 @@ class Rone < Formula
   end
 
   def install
-    pkg = Dir["rone-v#{version}-*-apple-darwin"].first
-    bin.install File.join(pkg, "rone")
-    (bin/"presets").install File.join(pkg, "presets")
+    bin.install "rone"
+    (bin/"presets").install "presets"
   end
 
   test do
