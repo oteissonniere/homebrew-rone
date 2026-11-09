@@ -5,8 +5,8 @@ Homebrew tap for [rone](https://github.com/oteissonniere/rone) — a small Rust 
 ## Installation
 
 ```sh
-brew tap oteissonniere/rone
-brew trust oteissonniere/rone   # Homebrew 7 requires explicit trust for third-party taps
+brew tap oteissonniere/homebrew-rone
+brew trust oteissonniere/homebrew-rone   # Homebrew 7 requires explicit trust for third-party taps
 brew install rone
 ```
 

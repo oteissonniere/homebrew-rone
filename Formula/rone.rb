@@ -14,7 +14,7 @@ class Rone < Formula
 
   def install
     bin.install "rone"
-    (bin/"presets").install "presets"
+    bin.install "presets"
   end
 
   test do
