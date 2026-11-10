@@ -1,15 +1,15 @@
 class Rone < Formula
   desc "Makes System One decision models pleasant to use from the command-line"
   homepage "https://github.com/oteissonniere/rone"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   if Hardware::CPU.arm?
     url "https://github.com/oteissonniere/rone/releases/download/v#{version}/rone-v#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "9898e65b34c5d3ca02022548be1822814bc13d176c10d8b610b3518f14837842"
+    sha256 "880c5bda5aab1a5dae244f295af55edb8cee9876bfbf7ab910b047ce116b42fb"
   else
     url "https://github.com/oteissonniere/rone/releases/download/v#{version}/rone-v#{version}-x86_64-apple-darwin.tar.gz"
-    sha256 "86f3fd453677265b5ec90f336d78a72a9297f547ca886341918bfa0a0a1239b1"
+    sha256 "7872f3f1aac6f87f1468b6a49bc13067a95a2f37a388a16bed7a018857de1c4c"
   end
 
   def install
